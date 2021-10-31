@@ -1,0 +1,724 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: Cambria, Karla, Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 1170px) { 
+  html {
+    margin-right: calc(100% - 100vw);
+    overflow-x: hidden; 
+  }
+}
+
+/*Шапка сайта*/
+header {
+	background-color: #000000;
+	padding: 5px 0px;
+	height: 65px;
+	display: table;
+	width: 100%;
+}
+.container {
+	width: 1170px;
+	margin: 0px auto;
+}
+header #logo {
+	display: table-cell;
+	width: 32%;
+	vertical-align: middle;
+}
+header #logo img {
+	width: 250px;
+}
+header nav {
+	font-size: 17px;
+	display: table-cell;
+	vertical-align: middle;
+}
+header nav ul {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+header nav ul li {
+	display: inline-block;
+	padding-right: 25px;
+	line-height: 65px;
+}
+header nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+header nav ul li a:hover {
+	color: rgb(243,143,25);
+	transition: 0.7s;
+}
+header nav ul li a img {
+	position: relative;
+	top: 15px;
+}
+header #authuser {
+	border: 1px solid rgb(243,143,25);
+	display: none;
+	padding: 5px;
+	background-color: #ffffff;
+	width: 250px;
+	position: absolute;
+	margin-left: 440px;
+	margin-top: 0px;
+	z-index: 9;
+	text-align: center;
+}
+header #authuser h3 {
+	margin: 10px 0px;
+}
+header #authuser input {
+	width: 90%;
+	font-size: 20px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+}
+header #authuser input:focus {
+	outline-color: rgb(243,143,25);
+}
+header #authuser p {
+	text-align: right;
+	margin: 0px 0px 10px 0px;
+}
+header #authuser button {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+	padding: 3px 10px;
+	font-size: 20px;
+}
+header #authuser button:hover {
+	border-color: rgb(243,143,25);
+	color: rgb(243,143,25);
+}
+header #authuser a {
+	text-decoration: none;
+	color: rgb(243,143,25);
+}
+header #authuser a:hover {
+	text-decoration: underline;
+}
+header #user {
+	border: 1px solid rgb(243,143,25);
+	display: none;
+	padding: 5px;
+	background-color: #ffffff;
+	width: 225px;
+	position: absolute;
+	margin-left: 465px;
+	margin-top: 0px;
+	z-index: 9;
+}
+header #user a {
+	text-decoration: none;
+	color: rgb(243,143,25);
+}
+header #user a:hover {
+	text-decoration: underline;
+}
+
+/*Основной контент*/
+main .title {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #212121;
+	text-transform: uppercase;
+	font-family: Cambria;
+	padding: 15px 0px 15px 50px;
+	margin-bottom: 10px;
+	display: table;
+}
+main .title h1 {
+	width: 65%;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 50px;
+	color: #ffffff;
+	display: table-cell;
+	text-align: center;
+}
+main .title #searchblock {
+	display: table-cell;
+}
+main .title #searchblock input {
+	padding-left: 5px;
+	font-size: 25px;
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+}
+main .title #searchblock input:focus {
+	outline-color: rgb(243,143,25);
+}
+main .title #searchblock button {
+	font-size: 25px;
+	height: 39px;
+	cursor: pointer;
+	padding: 0px 10px;
+	border-radius: 5px;
+}
+main .title #searchblock button:hover {
+	background-color: rgb(243,143,25);
+}
+
+/*Категории*/
+main .categories .container {
+	padding-left: 30px;
+}
+main .categories .category {
+	width: 350px;
+	height: 250px;
+	border: 1px solid #000000;
+	float: left;
+	margin: 20px 15px;
+	background-size: 350px 250px;
+	background-position: center center;
+	transition: 0.2s;
+}
+main .categories .category#rifles {
+	background-image: url("../images/rifles.jpg");
+}
+main .categories .category#pistols {
+	background-image: url("../images/pistols.jpg");
+}
+main .categories .category#patrons {
+	background-image: url("../images/patrons.jpg");
+}
+main .categories .category#knives {
+	background-image: url("../images/knives.jpg");
+}
+main .categories .category#automata {
+	background-image: url("../images/automata.jpg");
+}
+main .categories .category#arbalets {
+	background-image: url("../images/arbalets.jpg");
+}
+main .categories .category#selfdefence {
+	background-image: url("../images/selfdefence.jpg");
+}
+main .categories .category#workwear {
+	background-image: url("../images/workwear.jpg");
+}
+main .categories .category#accessories {
+	background-image: url("../images/accessories.jpg");
+}
+main .categories .category:hover {
+	border: 1px solid rgb(243,143,25);
+	background-size: 400px 300px;
+	transition: 0.2s;
+}
+main .categories .category h1 {
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: Cambria;
+	color: #ffffff;
+}
+main .categories .category a {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+main .categories .category a:hover {
+	background-color: rgba(0,0,0,.3);
+	transition: 0.7s;
+}
+main .categories .category a:hover > h1 {
+	color: rgb(243,143,25);
+	transition: 0.7s;
+}
+
+/*Подвал сайта*/
+.clearfix {
+	clear: both;
+}
+footer {
+	font-size: 17px;
+	padding: 10px 0px;
+	margin-top: 10px;
+	width: 100%;
+	background-color: #000000;
+}
+footer .container {
+	padding-left: 70px;
+}
+footer #logo-footer {
+	display: table-cell;
+	width: 40%;
+	vertical-align: middle;
+}
+footer #logo-footer img {
+	width: 80px;
+}
+footer nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+footer nav ul {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+footer nav ul li {
+	display: inline-block;
+	padding-right: 25px;
+	line-height: 65px;
+}
+footer nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+footer nav ul li a:hover {
+	color: rgb(243,143,25);
+	transition: 0.7s;
+}
+
+/*Регистрация*/
+.registration {
+	height: 600px;
+}
+.registration .container {
+	padding: 30px 0px;
+}
+.registration .container form {
+	width: 400px;
+	margin: 20px auto;
+	text-align: center;
+}
+.registration .container input {
+	width: 90%;
+	height: 40px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	padding: 10px 0px 10px 10px;
+	border-radius: 5px;
+	font-family: Cambria;
+}
+.registration .container input:focus {
+	outline-color: rgb(243,143,25);
+}
+.registration .container button {
+	margin-top: 30px;
+	height: 55px;
+	font-size: 30px;
+	width: 90%;
+	cursor: pointer;
+	border-radius: 5px;
+	font-family: Cambria;
+}
+.registration .container button:hover {
+	background-color: rgb(243,143,25);
+}
+.registration .container .message {
+	font-family: Cambria;
+	font-size: 20px;
+	text-align: center;
+	line-height: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	border: 3px dotted rgb(243,143,25);
+	border-radius: 5px;
+}
+
+/*Товары*/
+.goods .container {
+	width: 1000px;
+	padding-left: 20px;
+	min-height: 600px;
+}
+.goods .good {
+	border: 1px solid #232f3e;
+	width: 300px;
+	float: left;
+	margin: 20px 15px;
+	max-height: 420px;
+	font-family: Cambria;
+}
+.goods .good:hover {
+	border-color: rgb(243,143,25);
+	box-shadow: 0px 0px 20px 0px rgb(255 150 0 / 58%);
+}
+.goods .good:hover > .goodname a {
+	color: rgb(243,143,25);
+}
+.goods .good .goodimage {
+	height: 300px;
+	text-align: center;
+}
+.goods .good .goodimage img {
+	max-width: 90%;
+	max-height: 300px;
+}
+.goods .good p {
+	padding: 0px 5px;
+	margin: 5px 0px;
+}
+.goods .good .goodname {
+	height: 40px;
+}
+.goods .good .goodname a {
+	font-size: 18px;
+	color: #232f3e;
+	text-decoration: none;
+}
+.goods .good .goodname a:hover {
+	text-decoration: underline;
+}
+.goods .good .goodprice {
+	float: left;
+	font-size: 30px;
+	font-weight: 600;
+	color: rgb(243,143,25);
+	padding-top: 5px;
+}
+.goods .good .goodbuy {
+	float: right;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	margin: 0px auto;
+	border: 1px solid rgb(243,143,25);
+	background-color: #232f3e;
+	padding: 0px;
+	margin: 0px 15px 5px 0px;
+}
+.goods .good .goodbuy a {
+	display: block;
+	width: 100%;
+	height: 50px;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 5px 0px;
+	box-sizing: border-box;
+}
+.goods .good .goodbuy a:hover {
+	background-color: rgb(243,143,25);
+}
+
+/* Корзина товаров */
+.cart{
+	padding: 30px 0px;
+}
+.cart .container {
+	width: 1000px;
+	min-height: 540px;
+}
+#header-list-cart {
+    height: 30px;
+    border-bottom: 1px solid #DBDBDB;
+}
+#header-list-cart > div {
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    font: bold 13px sans-serif;
+    color: #6D6D6D;
+    margin-top: 7px;
+}
+#head1 { width: 130px; }
+#head2 { width: 600px; }
+#head3 { width: 75px; }
+#head4 { width: 165px; }
+.block-list-cart {
+    height: 130px;
+    border-bottom: 1px solid #E1E1E2; 
+}
+.block-list-cart > div {
+    float: left;
+    margin-left: 5px;
+}
+.img-cart {
+    width: 130px;
+    height: 125px;
+}
+.title-cart {
+    width: 600px;
+    height: 125px;
+}
+.count-cart {
+    width: 60px;
+    height: 125px;
+    padding-left: 0px;
+}
+.count-cart > ul {
+    list-style: none;
+}
+.price-product {
+    width: 120px;
+    height: 125px;
+    padding-left: 50px;
+}
+.delete-cart {
+    margin-top: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.delete-cart > a {
+    font: bold 24px calibri;
+    text-decoration: none;
+    color: red;
+}
+.title-cart > p {
+    text-align: center;
+    margin-top: 45px; 
+}
+.title-cart > p > a{
+   font: 15px sans-serif;
+   color: #097A9F;
+}
+.title-cart > p > a:hover {
+   text-decoration: none;
+}
+.input-count-style {
+    margin-top: 31px;
+    margin-left: -20px;
+}
+.input-count-style input {
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    width: 32px;
+    height: 22px;
+    font: 15px sans-serif;
+    border-radius:5px;  
+}
+.input-count-style p {
+    cursor: pointer;
+    font: 15px sans-serif;
+    margin: 1px; 
+}
+.price-product p {
+    margin-left: 15px;
+    margin-top: 65px;
+    font: bold 18px sans-serif;
+}
+.price-product h5 {
+    position: absolute;
+    font: bold 13px sans-serif;
+    margin-top: 42px;
+    margin-left: 15px;
+    color: #848484;
+}
+.itog-price {
+    margin-top: 20px;
+    padding-right: 20px;
+    font: 20px sans-serif;
+}
+.itog-price > strong {
+    font:18px sans-serif;
+}
+.button-next {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.button-next > a {
+    border: 1px solid #B0C181;
+    font:15px sans-serif;
+    color: white;  
+    padding-left: 18px;  
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;  
+    background-color: #fd761f;  
+    border-radius:6px; 
+}
+.button-next > a:hover {
+    background-color: red;
+}
+
+/*Поиск*/
+#result {
+	padding-top: 30px;
+	text-align: center;
+}
+
+/*О компании*/
+.about {
+	margin-top: -10px;
+	font-family: Cambria;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about #aboutimage {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.about #aboutinfo {
+	flex-grow: 5;
+	flex-shrink: 0;
+	flex-basis: 400px;
+}
+.about #aboutinfo h1 {
+	text-align: center;
+	margin: 15px 0px;
+	font-size: 40px;
+}
+.about #aboutinfo p {
+	font-size: 20px;
+	text-indent: 50px;
+	text-align: justify;
+}
+
+/*Доставка и оплата*/
+.delivery {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000000;
+}
+.pay {
+	padding-bottom: 20px;
+}
+.delivery h1, .pay h1 {
+	text-align: center;
+	font-size: 40px;
+	margin: 10px 0px;
+}
+.delivery h2, .pay h2 {
+	text-decoration: underline;
+	font-size: 30px;
+	text-indent: 50px;
+	margin: 5px 0px;
+}
+.delivery h3, .pay h3 {
+	font-size: 25px;
+	text-indent: 50px;
+	margin: 5px 0px;
+}
+.delivery p, .pay p {
+	font-size: 20px;
+	text-indent: 50px;
+	text-align: justify;
+}
+
+/*Контакты*/
+.contacts h1 {
+	text-align: center;
+	font-size: 40px;
+	margin: 15px 0px;
+}
+.contacts p {
+	text-indent: 50px;
+	text-align: justify;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.contacts p #strelokimage {
+	width: 400px;
+	margin-right: 30px;
+}
+.contacts p #contactsimage {
+	display: block;
+	margin: 0px auto;
+	width: 700px;
+}
+
+/*Новости*/
+.news .new {
+	padding: 20px 10px;
+	border-bottom: 1px solid rgb(243,143,25);
+	margin-bottom: 20px;
+}
+.news .new .newimage {
+	width: 30%;
+}
+.news .new .newimage img {
+	width: 100%;
+	float: left;
+}
+.news .new .newimage a:hover > img {
+	outline: 1px solid rgb(243,143,25);
+}
+.news .new .newinfo {
+	width: 68%;
+	float: right;
+}
+.news .new .newinfo h1 {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.news .new .newinfo h1 a {
+	text-decoration: none;
+	color: rgb(243,143,25);
+}
+.news .new .newinfo h1 a:hover {
+	text-decoration: underline;
+}
+.news .new .newinfo p {
+	text-indent: 50px;
+	text-align: justify;
+	font-size: 24px;
+}
+
+/*Отзывы*/
+.comments {
+	display: flex;
+	flex-wrap: wrap;
+}
+.comments .comment {
+	text-align: center;
+	flex-grow: 0;
+	flex-basis: 350px;
+	margin: 20px 20px 40px 20px;
+}
+.comments .comment h1 {
+	margin-bottom: 10px;
+}
+#addcomment {
+	border-top: 1px solid rgb(243,143,25);
+	padding: 10px 30px;
+}
+#addcomment h1 {
+	margin-bottom: 10px;
+}
+#addcomment input {
+	padding-left: 5px;
+	font-size: 25px;
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#addcomment input:focus {
+	outline-color: rgb(243,143,25);
+}
+#addcomment textarea {
+	width: 500px;
+	max-width: 1000px;
+	height: 150px;
+	max-height: 400px;
+	font-size: 18px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#addcomment textarea:focus {
+	outline-color: rgb(243,143,25);
+}
+#addcomment button {
+	font-family: Cambria;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 45px;
+	display: block;
+	width: 200px;
+	text-align: center;
+	background-color: rgb(243,143,25);
+	text-decoration: none;
+	color: #000000;
+	border-radius: 5px;
+}
+#addcomment button:hover {
+	background-color: #000000;
+	color: rgb(243,143,25);
+}
